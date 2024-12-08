@@ -1,3 +1,23 @@
+" plugins using vim-plug manager
+call plug#begin()
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+" auto complete braces
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+" color
+colorscheme molokai
+" colorscheme gruvbox
+
 " Disable compatibility with vi which can cause unexpected issues
 set nocompatible
 
